@@ -17,6 +17,9 @@
     "require": {},
     "require-dev": {},
     "autoload": {
+        "files": [
+            "src/index.php"
+        ],
         "psr-4": {
             "ChiedoLabs\\LaboratoryHelpers\\": "src/"
         }
