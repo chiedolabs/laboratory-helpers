@@ -35,6 +35,9 @@ if ( ! function_exists( 'get_theme_option' ) ) :
 	 * @return {string|false}
 	 */
 	function get_theme_option( $option_id, $theme_options = [], $default = null ) {
+		global $lab_theme_options;
+		$theme_options = ( ! empty( $lab_theme_options ) ) ? $lab_theme_options : $theme_options;
+
 		if (
 			! isset( $theme_options ) ||
 			! is_array( $theme_options )
