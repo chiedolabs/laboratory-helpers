@@ -2,7 +2,7 @@
 /**
  * Custom Options Helper Functions.
  *
- * @package LaboratoryHelpers
+ * @package Laboratory Helpers
  */
 
 if ( ! function_exists( 'is_option_checked' ) ) :
@@ -28,27 +28,25 @@ endif;
 if ( ! function_exists( 'get_theme_option' ) ) :
 	/**
 	 * Retrieve a theme options value and avoid PHP "undefined index" errors
-	 * NOTE - this method does nothing with the database; it merely works with data already pulled from db.
-	 * $lab_theme_options global var is set in functions/setup-global-variables.php
 	 *
 	 * @param {string} $option_id - the option id.
+	 * @param {array}  $theme_options - your options.
 	 * @param {string} $default - default value to use if option value is null.
 	 * @return {string|false}
 	 */
-	function get_theme_option( $option_id, $default = null ) {
-		global $lab_theme_options;
+	function get_theme_option( $option_id, $theme_options = [], $default = null ) {
 		if (
-			! isset( $lab_theme_options ) ||
-			! is_array( $lab_theme_options )
+			! isset( $theme_options ) ||
+			! is_array( $theme_options )
 		) {
 			return false;
 		}
 
 		if (
-			isset( $lab_theme_options[ $option_id ] ) &&
-			! empty( $lab_theme_options[ $option_id ] )
+			isset( $theme_options[ $option_id ] ) &&
+			! empty( $theme_options[ $option_id ] )
 		) {
-			return $lab_theme_options[ $option_id ];
+			return $theme_options[ $option_id ];
 		}
 
 		if ( isset( $default ) ) {

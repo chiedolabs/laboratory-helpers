@@ -2,7 +2,7 @@
 /**
  * Custom Theme Helper Functions.
  *
- * @package LaboratoryHelpers
+ * @package Laboratory Helpers
  */
 
 if ( ! function_exists( 'get_current_post' ) ) :

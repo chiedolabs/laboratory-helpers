@@ -2,7 +2,7 @@
 /**
  * Laboratory Theme Functions.
  *
- * @package LaboratoryHelpers
+ * @package Laboratory Helpers
  */
 
 /**

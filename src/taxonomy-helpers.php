@@ -2,7 +2,7 @@
 /**
  * Custom Taxonomy functions.
  *
- * @package LaboratoryHelpers
+ * @package Laboratory Helpers
  */
 
 if ( ! function_exists( 'add_wysiwyg_to_tax' ) ) :

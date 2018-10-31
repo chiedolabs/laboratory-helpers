@@ -6,11 +6,13 @@
     "authors": [
         {
             "name": "Ricardo Fearing",
-            "email": "ricardo@chiedo.com"
+            "email": "ricardo@chiedo.com",
+            "homepage": "https://github.com/rfearing"
         },
         {
             "name": "Don Townsend",
-            "email": "don@chiedo.com"
+            "email": "don@chiedo.com",
+            "homepage": "https://github.com/townofdon"
         }
     ],
     "type": "library",
