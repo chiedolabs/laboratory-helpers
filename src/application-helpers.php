@@ -68,7 +68,7 @@ if ( ! function_exists( 'get_list_of_pages' ) ) :
 	}
 endif;
 
-if ( ! function_exists( 'get_list_of_pages' ) ) :
+if ( ! function_exists( 'load_template_part' ) ) :
 	/**
 	 * Those times when you need to get a template part, but don't want to echo it right away.
 	 * See - https://developer.wordpress.org/reference/functions/get_template_part/
