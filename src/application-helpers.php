@@ -103,7 +103,7 @@ if ( ! function_exists( 'get_image_src_array_from_attachment_ids' ) ) :
 			return wp_get_attachment_image_src( $ids, 'full' );
 		}
 		// Get image sources in an array for each image id.
-		$images = array_map( 'vb_get_attachment_image_src', $ids );
+		$images = array_map( 'wp_get_attachment_image_src', $ids );
 		// If $images is an array with only 1 element, return the first element of the array.
 		if ( ! empty( $images ) && count( $images ) === 1 ) {
 			return reset( $images );
